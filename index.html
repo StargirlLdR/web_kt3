@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компонент карточки</title>
+    <script src="card-component.js" defer></script>
+</head>
+<body>
+    <h1>Карточки с контентом</h1>
+    <card-component>
+        <span slot="title">Первая карточка</span>
+        <span slot="content">Вот вам картинка с собачкой</span>
+        <img slot="footer" src="https://i.pinimg.com/736x/e0/2f/d6/e02fd6ca8f8e4fb4485e54fbb56d55ee.jpg" alt="Изображение для первой карточки">
+    </card-component>
+
+    <card-component>
+        <span slot="title">Вторая карточка</span>
+        <span slot="content">А вот еще одна картинка с собачкой</span>
+        <img slot="footer" src="https://i.pinimg.com/736x/15/89/8e/15898e59752f3bd18d8fda602ddb14f9.jpg" alt="Изображение для второй карточки">
+    </card-component>
+
+    <card-component>
+        <span slot="title">Третья карточка</span>
+        <span slot="content">Собаки могут запоминать рутину хозяев и понимать, когда пора на прогулку или кормление. Они даже могут загрустить, если вы опаздываете домой, именно потому, что помнят расписание.</span>
+        <div slot="footer">У собак есть чувство времени</div>
+    </card-component>
+</body>
+</html>
